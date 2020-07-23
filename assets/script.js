@@ -7,9 +7,11 @@
             if (this.status === 200) {
 
                 var qString = JSON.parse(this.responseText);
-                var allQuote = qString.author+ qString.quote;
-                document.getElementById("quote").innerHTML = allQuote;
-                
+                var qAut = qString.author;
+                var quo = qString.quote;
+                document.getElementById("quote").innerHTML = quo;
+                document.getElementById("author").innerHTML = qAut;
+
                 console.log(qString);
                     
             } else {
