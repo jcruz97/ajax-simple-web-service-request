@@ -1,4 +1,41 @@
+@import url(//db.onlinewebfonts.com/c/9953a2e67943cbfc522cf18c03367b87?family=tintin);
+@font-face {font-family: "tintin"; src: url("//db.onlinewebfonts.com/t/9953a2e67943cbfc522cf18c03367b87.eot"); 
+    src: url("//db.onlinewebfonts.com/t/9953a2e67943cbfc522cf18c03367b87.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9953a2e67943cbfc522cf18c03367b87.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/9953a2e67943cbfc522cf18c03367b87.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/9953a2e67943cbfc522cf18c03367b87.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9953a2e67943cbfc522cf18c03367b87.svg#tintin") format("svg"); } 
+
 body {
-    background-color: black;
-    color : white;
+    background-color: #262626;
+    color : #F2F2F2;
+    text-align: center;
+    font-family: 'tintin';
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-BC {
+    align-content: flex-start;
+}
+
+h1 {
+    margin-top : 5vw;
+    font-size: 5em;
+}
+
+.bq {
+    margin-top : 5vw;
+    font-size: 1.75em;
+}
+
+.authorPic {
+    margin-top : 5vw;
+}
+
+.logo-BC {
+    width: 10vw;
+    height: 10vw;
 }

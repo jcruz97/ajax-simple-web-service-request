@@ -9,9 +9,10 @@
                 var qString = JSON.parse(this.responseText);
                 var qAut = qString.author;
                 var quo = qString.quote;
-                document.getElementById("quote").innerHTML = quo;
-                document.getElementById("author").innerHTML = qAut;
+                var picture = qString.photo;
 
+                document.getElementById("autPic").setAttribute("src",picture);
+                document.getElementById("quote").innerHTML = quo +"<br>"+qAut;
                 console.log(qString);
                     
             } else {
