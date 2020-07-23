@@ -1,16 +1,19 @@
     let xhr = new XMLHttpRequest;
 
-    xhr.open('GET', 'https://api.github.com/users', true)
+    xhr.open('GET', 'https://thatsthespir.it/api', true)
 
     xhr.onload = function() 
         {
-            if (this.status === 200) 
-                {
-                    console.log(JSON.parse(this.responseText));
-        }
+            if (this.status === 200) {
+
+                var qString = JSON.parse(this.responseText);
+                var allQuote = qString.author+ qString.quote;
+                document.getElementById("quote").innerHTML = allQuote;
+                
+                console.log(qString);
+                    
+            } else {
+                alert("Error!")
+            }
                 }
     xhr.send();
-
-    function quoting (){
-        document.getElementById("quote").innerHTML ="lul";
-    }
