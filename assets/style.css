@@ -14,11 +14,11 @@ body {
 .title{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-content: center;
 }
 
 .logo-BC {
-    align-content: flex-start;
+    margin-right: 8em;
 }
 
 h1 {
